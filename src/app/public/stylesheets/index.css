@@ -1,0 +1,17 @@
+body {
+    background-color: #333!important;
+}
+.container {
+    /* centerify all */
+    margin: 0 auto;
+    width: 100%;
+}
+
+label {
+    font-size: 25px;
+    color: black
+}
+#linkhere {
+    color: black;
+    font-size: 25px;
+}

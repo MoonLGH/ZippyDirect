@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ZippyDirect - つかり</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand text-capitalize" href="https://MoonL.me/" style="color: #42dca3;">MoonL</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--bs-secondary);">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link" href="#faq">Faq</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#donate">donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-color: var(--bs-gray-400)">
+        <div class="intro-body" style="color: var(--bs-light);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 id="title" class="brand-heading text-capitalize" style="color: var(--bs-dark);">ZippyDirect</h1>
+                        <p class="intro-text" style="color: var(--bs-dark);">Direct your zippyshare links</p>
+                        <div class="row">
+                            <!-- make bootstrap input with label "Put your link here" -->
+                            <div class="col-lg-8 mx-auto">
+                                <div class="form-group">
+                                    <label for="link">Put your link here</label>
+                                    <input type="text" class="form-control" id="link" name="link" placeholder="https://zippyshare.com/v/...">
+                                </div>
+                                <button onclick="get()" class="btn btn-primary">Submit</button>
+                                <br>
+                                <span class="text-center" id="linkhere"></span>
+                                <textarea name="result" id="result" cols="50"disabled="disabled" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="faq" style="background: var(--bs-dark);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>F.A.Q</h2>
+                    <p style="text-align: left;">Q:How it works ?<br>A:it scrap the link and use some algorithm to parse the link, look at <a href="https://github.com/MoonLGH/ZippyDirect">Here for code</a></p>
+                    <p style="text-align: left;">Q:Where do this website hosted ?<br>A:this web hosted with nodejs express server on my linux vm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="donate" style="background: var(--bs-gray-400);color: var(--bs-light);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="color: var(--bs-dark);">
+                    <h2>Donate me</h2>
+                    <p style="width: 75%;margin: auto;text-align: left;">This will not give you any benefit, but it will help financialy to host cool stuff, like this!</p>
+                    <p style="width: 75%;margin: auto;font-size: 25px;" class="text-center">Trakteer : <a href="https://trakteer.id/farrel-athaillah-h">Here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <p>Made with ❤ - MoonL</p>
+        </div>
+    </footer>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/grayscale.js"></script>
+    <script src="javascripts/index.js"></script>
+</body>
+
+</html>
