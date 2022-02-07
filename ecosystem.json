@@ -1,0 +1,7 @@
+{
+    "apps" : [{
+      "name"   : "Zippy",
+      "script" : "node",
+      "args" : "dist/index.js"
+    }]
+}
