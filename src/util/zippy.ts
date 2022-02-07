@@ -28,6 +28,7 @@ async function parse(url:string) {
   const lastString = scr!.substringAfter("913) + \"").substringBefore("\";");
   const nums = num % 51245 + num % 913;
   link += firstString + nums.toString() + lastString;
+  console.log(url);
   return {link};
 }
 
